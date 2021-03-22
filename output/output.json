@@ -1,0 +1,602 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "PetStore API GET/POST/PUT/DELETE Verification",
+    "line": 2,
+    "id": "petstore-api-get/post/put/delete-verification",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "features/petstore.feature",
+    "elements": [
+      {
+        "id": "petstore-api-get/post/put/delete-verification;add-a-new-pet-,verify-,-update-and-delete-the-pet-details",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Add a new pet ,verify , update and delete the pet details",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:150"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add a dog category chiuaha name Monty to the pet store with status sold",
+            "match": {
+              "location": "steps/cuke.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I get a HTTP Status as 200",
+            "match": {
+              "location": "steps/cuke.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I get the pet from the petstore",
+            "match": {
+              "location": "steps/cuke.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 707000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I verify the pet is added in my petstore",
+            "match": {
+              "location": "steps/cuke.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I update pet oldname Monty to newname Tinkerbell to the pet store with status pending",
+            "match": {
+              "location": "steps/cuke.js:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 940000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I get a HTTP Status as 200",
+            "match": {
+              "location": "steps/cuke.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I get the pet from the petstore",
+            "match": {
+              "location": "steps/cuke.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 692000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I verify I have atleast one pet in my store that has name Tinkerbell",
+            "match": {
+              "location": "steps/cuke.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I delete that pet I just created",
+            "match": {
+              "location": "steps/cuke.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 890000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I get a HTTP Status as 200",
+            "match": {
+              "location": "steps/cuke.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I retrieve the deleted pet from the petstore",
+            "match": {
+              "location": "steps/cuke.js:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 744000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I get a HTTP Status as 404",
+            "match": {
+              "location": "steps/cuke.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:157"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "petstore-api-get/post/put/delete-verification;find-pets-by-status",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Find pets by status",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:150"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I get status available of my pet",
+            "match": {
+              "location": "steps/cuke.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 707000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I get a HTTP Status as 200",
+            "match": {
+              "location": "steps/cuke.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:157"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "petstore-api-get/post/put/delete-verification;find-pets-by-status",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Find pets by status",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:150"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I get status sold of my pet",
+            "match": {
+              "location": "steps/cuke.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 665000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I get a HTTP Status as 200",
+            "match": {
+              "location": "steps/cuke.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:157"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "petstore-api-get/post/put/delete-verification;find-pets-by-status",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Find pets by status",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:150"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I get status pending of my pet",
+            "match": {
+              "location": "steps/cuke.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 669000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I get a HTTP Status as 200",
+            "match": {
+              "location": "steps/cuke.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:157"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "petstore-api-get/post/put/delete-verification;find-pets-by-status",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Find pets by status",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:150"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I get status blah of my pet",
+            "match": {
+              "location": "steps/cuke.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 672000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I get a HTTP Status as 404",
+            "match": {
+              "location": "steps/cuke.js:26"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 7000000,
+              "error_message": "UnexpectedError: \n\u001b[31m\u001b[1mexpected\u001b[22m\u001b[39m 200 \u001b[31m\u001b[1mto equal\u001b[22m\u001b[39m 404\n\n    at Object.assertHttpStatusCode (/Users/sanchari.rao/Downloads/qa-coding-test-API-Sanchari-feature_branch_pl/steps/requester.js:91:5)\n    at World.<anonymous> (/Users/sanchari.rao/Downloads/qa-coding-test-API-Sanchari-feature_branch_pl/steps/cuke.js:27:22)\n    set UNEXPECTED_FULL_TRACE=true to see the full stack trace"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:157"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "petstore-api-get/post/put/delete-verification;check-get-/pet/petid-error-codes",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "Check GET /pet/petId Error Codes",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:150"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "I get info of pet 0 from the petstore",
+            "match": {
+              "location": "steps/cuke.js:102"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 749000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "I get a HTTP Status as 404",
+            "match": {
+              "location": "steps/cuke.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "error message is Pet not found",
+            "match": {
+              "location": "steps/cuke.js:140"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:157"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "petstore-api-get/post/put/delete-verification;check-get-/pet/petid-error-codes",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "Check GET /pet/petId Error Codes",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:150"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "I get info of pet 2.1 from the petstore",
+            "match": {
+              "location": "steps/cuke.js:102"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 762000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "I get a HTTP Status as 404",
+            "match": {
+              "location": "steps/cuke.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "error message is java.lang.NumberFormatException",
+            "match": {
+              "location": "steps/cuke.js:140"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "steps/cuke.js:157"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
